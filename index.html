@@ -3,55 +3,74 @@
 	<head>
 		<title>Dawg Pizza</title>
 		
-		<link href="css/normalize.css" type="text/css" rel="stylesheet" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 		<link href="css/main.css" type="text/css" rel="stylesheet" />
 		<link href="img/pizza-icon.png" type="image/png" rel="icon" />
 	</head>
 	<body>
-		<main>
-			<header>
-				<h1>Dawg Pizza</h1>
-				<p>Feeding Hungry Huskies Since 2013</p>
-			</header>
-			<div id="info">
-				<h2>Address</h2>
-				<a href="https://goo.gl/maps/CKrRF">4529 University Way NE<br />
-				Seattle, WA 98105</a>
-				<h2>Hours</h2>
-				<p>Open daily from noon to midnight</p>
-				<h2>To Order</h2>
-				<p>Call us at <a href="tel:2065551212">206-555-1212</a></p>
-			</div>
-			<div id="menu">
-				<h2>Our Menu</h2>
-				<h3>Meat Pies</h3>
-				<dl>
-					<dt>Bacon &amp; Pineapple</dt>
-					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus vitae ante vitae mollis. Vivamus fermentum sem in neque semper.</dd>
-					<dt>Duck, Duck, Goose</dt>
-					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit enim eget erat convallis, et convallis dolor eleifend. Integer euismod.</dd>
-					<dt>The Bambi</dt>
-					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec velit mauris. Nullam ac odio sodales urna sollicitudin ornare. Duis.</dd>
-				</dl>
-				<h3>Veggie Pies</h3>
-				<dl>
-					<dt>Forest Floor</dt>
-					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam nunc quis neque mollis, vitae mollis nibh placerat. Aliquam lobortis.</dd>
-					<dt>Green Monster</dt>
-					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus at dolor sed euismod. Vivamus sit amet condimentum dui, et.</dd>
-					<dt>Caprese</dt>
-					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan volutpat auctor. Sed placerat malesuada tristique. Aenean convallis fringilla turpis.</dd>
-				</dl>
-			</div>
-			<div id="about">
-				<h2>About Us</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel felis nec erat rutrum viverra a quis arcu. In fermentum auctor dolor vel commodo. Vestibulum vehicula nec lacus quis semper. Sed id odio quis urna malesuada auctor in eleifend dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis congue leo in tincidunt volutpat. Nulla facilisi. Vestibulum condimentum lacus nulla, at ultricies sem viverra ac. Aliquam et lectus tristique, eleifend enim nec, tincidunt sapien. Fusce magna magna, rutrum ac blandit at, tempor ac diam. In tincidunt faucibus odio ac vehicula. Mauris tincidunt dui eu vestibulum varius. Curabitur et pulvinar ex.</p>
-				<p>Morbi ac purus fermentum, commodo augue ut, suscipit orci. Donec aliquam, erat sed vulputate mollis, metus enim lacinia massa, at rutrum mi felis vel risus. Aliquam bibendum arcu at purus aliquet, non blandit purus facilisis. Donec pretium, erat vel commodo facilisis, dui lectus finibus ex, egestas consectetur libero ligula eget tellus. Vivamus lorem velit, lacinia in pulvinar nec, gravida id lorem. Cras at sem semper ipsum convallis euismod eu nec eros. Sed placerat malesuada dignissim. Nullam cursus mi non lacinia ultricies. Ut eleifend elit et orci gravida cursus. Aliquam erat volutpat. Suspendisse sit amet diam eu nibh consectetur molestie.</p>
-			</div>
-			<footer>
-				<p>&copy; 2014, Dawg Pizza, <a href="mailto:info@dawgpizza.com">info@dawgpizza.com</a></p>
-				<p><a href='#'>Back to Top &uarr;</a></p>
-			</footer>
-		</main>
+		<div class="container-fluid">
+			<main>
+				<header>
+					<h1>Dawg Pizza</h1>
+					<p class="tagline">Feeding Hungry Huskies Since 2013</p>
+					<nav role="navigation">
+						<ul>
+							<li><a href="#location">location</a></li>
+							<li><a href="#menu">menu</a></li>
+							<li><a href="#about">about</a></li>
+						</ul>
+					</nav>
+				</header>
+				<section id="info" class="row">
+					<div class="col-md-4">
+						<h2>Address</h2>
+						<a href="https://goo.gl/maps/CKrRF">4529 University Way NE<br />
+						Seattle, WA 98105</a>
+					</div>
+					<div class="col-md-4">
+						<h2>Hours</h2>
+						<p>Open daily from noon to midnight</p>
+					</div>
+					<div class="col-md-4">
+						<h2>To Order</h2>
+						<p>Call us at <a href="tel:2065551212">206-555-1212</a></p>
+					</div>
+				</section>
+				<section id="menu" class="row">
+					<h2>Our Menu</h2>
+					<div class="col-md-6">
+						<h3>Meat Pies</h3>
+						<dl>
+							<dt>Bacon &amp; Pineapple</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus vitae ante vitae mollis. Vivamus fermentum sem in neque semper.</dd>
+							<dt>Duck, Duck, Goose</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit enim eget erat convallis, et convallis dolor eleifend. Integer euismod.</dd>
+							<dt>The Bambi</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec velit mauris. Nullam ac odio sodales urna sollicitudin ornare. Duis.</dd>
+						</dl>
+					</div>
+					<div class="col-md-6">
+						<h3>Veggie Pies</h3>
+						<dl>
+							<dt>Forest Floor</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam nunc quis neque mollis, vitae mollis nibh placerat. Aliquam lobortis.</dd>
+							<dt>Green Monster</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus at dolor sed euismod. Vivamus sit amet condimentum dui, et.</dd>
+							<dt>Caprese</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan volutpat auctor. Sed placerat malesuada tristique. Aenean convallis fringilla turpis.</dd>
+						</dl>
+					</div>
+				</section>
+				<section id="about">
+					<h2>About Us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel felis nec erat rutrum viverra a quis arcu. In fermentum auctor dolor vel commodo. Vestibulum vehicula nec lacus quis semper. Sed id odio quis urna malesuada auctor in eleifend dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis congue leo in tincidunt volutpat. Nulla facilisi. Vestibulum condimentum lacus nulla, at ultricies sem viverra ac. Aliquam et lectus tristique, eleifend enim nec, tincidunt sapien. Fusce magna magna, rutrum ac blandit at, tempor ac diam. In tincidunt faucibus odio ac vehicula. Mauris tincidunt dui eu vestibulum varius. Curabitur et pulvinar ex.</p>
+					<p>Morbi ac purus fermentum, commodo augue ut, suscipit orci. Donec aliquam, erat sed vulputate mollis, metus enim lacinia massa, at rutrum mi felis vel risus. Aliquam bibendum arcu at purus aliquet, non blandit purus facilisis. Donec pretium, erat vel commodo facilisis, dui lectus finibus ex, egestas consectetur libero ligula eget tellus. Vivamus lorem velit, lacinia in pulvinar nec, gravida id lorem. Cras at sem semper ipsum convallis euismod eu nec eros. Sed placerat malesuada dignissim. Nullam cursus mi non lacinia ultricies. Ut eleifend elit et orci gravida cursus. Aliquam erat volutpat. Suspendisse sit amet diam eu nibh consectetur molestie.</p>
+				</section>
+				<footer>
+					<p>&copy; 2014, Dawg Pizza, <a href="mailto:info@dawgpizza.com">info@dawgpizza.com</a></p>
+					<p><a href='#'>Back to Top &uarr;</a></p>
+				</footer>
+			</main>
+		</div>
 	</body>
 </html>
